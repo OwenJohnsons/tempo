@@ -34,10 +34,10 @@ c  - Scaling factor for a+b+c+d (parameter SHAPHOF) that can be fitted for.
 c  Variable name 'x' changed to 'xx' to avoid conflict with variable
 c     'x' defined in acom.h
 
-	implicit real*8 (a-h,o-z)
+	implicit real(8) (a-h,o-z)
 	include 'dim.h'
         include 'acom.h'
-	real*8 fctn(NPAP1),k,m2
+	real(8) fctn(NPAP1),k,m2
 	parameter (twopi=6.28318530717958648d0,SUNMASS=4.925490947d-6)
 	parameter (RAD=360.d0/twopi)
 	include 'dp.h'
@@ -47,7 +47,7 @@ c     'x' defined in acom.h
      +             DTGR,TDIS,BCLT      
 	include 'trnsfr.h'
 
-        real*10 frb, tt0, tt, orbits
+        real(10) frb, tt0, tt, orbits
 
         frb = 1.d0/pb(1)
 	an=twopi/pb(1)
